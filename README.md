@@ -2,8 +2,17 @@
 
 Official Lukqo developer website.
 
-Current web revision: v3.
+## Structure
 
-- Dio: published Android app with Google Play link, privacy and support pages.
-- Yomuhon: in-development project with no download button.
-- `app-ads.txt`: AdMob declaration at the domain root.
+- `/` — developer home
+- `/apps/dio/` — Dio product page
+- `/apps/dio/privacy.html` — Dio privacy policy
+- `/apps/dio/support.html` — Dio support
+- `/apps/yomuhon/` — Yomuhon project page
+- `/apps/yomuhon/privacy.html` — Yomuhon pre-release privacy notice
+- `/apps/yomuhon/support.html` — Yomuhon project contact
+- `/app-ads.txt` — AdMob authorized seller declaration
+
+## Revision
+
+Website revision: v4.
