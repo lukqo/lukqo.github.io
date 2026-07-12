@@ -73,7 +73,7 @@ h2 { font-size: clamp(2rem, 4vw, 3.3rem); letter-spacing: -.05em; }
 .app-grid { display: grid; gap: 18px; }
 .app-card {
   display: grid;
-  grid-template-columns: 104px 1fr auto;
+  grid-template-columns: 104px minmax(0, 1fr);
   gap: 28px;
   align-items: center;
   padding: 32px;
@@ -228,3 +228,9 @@ footer div { display: flex; gap: 18px; }
   cursor: default;
   user-select: none;
 }
+
+/* v3 */
+.app-card { cursor: default; }
+.card-actions { margin-top: 22px; }
+.card-button { transition: transform .18s ease, opacity .18s ease; }
+.card-button.primary { font-weight: 700; }
