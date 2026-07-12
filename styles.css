@@ -1,0 +1,257 @@
+:root {
+  color-scheme: light dark;
+  --background: #f7f7f5;
+  --surface: rgba(255,255,255,.76);
+  --text: #18181a;
+  --secondary: #68686d;
+  --line: rgba(24,24,26,.10);
+  --accent: #0a63ce;
+  --shadow: 0 20px 60px rgba(0,0,0,.06);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+.site-header,
+main,
+footer {
+  width: min(1120px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.site-header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 760;
+  letter-spacing: -.04em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+nav a,
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: .95rem;
+}
+
+nav a:hover,
+nav a[aria-current="page"],
+footer a:hover {
+  color: var(--text);
+}
+
+.hero {
+  padding: 120px 0 104px;
+  max-width: 850px;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-size: .78rem;
+  font-weight: 720;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+h1, h2, h3, p { margin-top: 0; }
+
+h1 {
+  margin-bottom: 24px;
+  font-size: clamp(3.4rem, 8vw, 6.8rem);
+  line-height: .94;
+  letter-spacing: -.07em;
+  font-weight: 760;
+}
+
+.hero-copy,
+.lead {
+  max-width: 700px;
+  color: var(--secondary);
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.section {
+  padding: 28px 0 110px;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  letter-spacing: -.05em;
+}
+
+.app-card {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 28px;
+  align-items: center;
+  padding: 34px;
+  margin-top: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.app-icon {
+  width: 92px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  font-size: 2rem;
+  font-weight: 750;
+  background: var(--text);
+  color: var(--background);
+}
+
+.yomuhon-icon {
+  font-family: serif;
+  font-weight: 600;
+}
+
+.status {
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.app-copy h3 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  letter-spacing: -.04em;
+}
+
+.app-copy p:last-child,
+.legal p {
+  color: var(--secondary);
+  line-height: 1.65;
+}
+
+.muted-card { opacity: .82; }
+
+.legal {
+  max-width: 760px;
+  padding: 86px 0 110px;
+}
+
+.legal h1 {
+  font-size: clamp(3rem, 7vw, 5.2rem);
+}
+
+.updated {
+  margin-top: -10px;
+  margin-bottom: 60px;
+}
+
+.legal section {
+  margin-top: 48px;
+}
+
+.legal section h2 {
+  margin-bottom: 14px;
+  font-size: 1.55rem;
+  letter-spacing: -.03em;
+}
+
+footer {
+  padding: 30px 0 44px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--secondary);
+  font-size: .9rem;
+}
+
+footer p { margin: 0; }
+
+footer div {
+  display: flex;
+  gap: 18px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111113;
+    --surface: rgba(255,255,255,.035);
+    --text: #f4f4f2;
+    --secondary: #a5a5aa;
+    --line: rgba(255,255,255,.09);
+    --accent: #6baaff;
+    --shadow: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header,
+  main,
+  footer {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .site-header { min-height: 68px; }
+
+  nav { gap: 14px; }
+
+  nav a { font-size: .86rem; }
+
+  .hero { padding: 84px 0 76px; }
+
+  h1 { font-size: 3.45rem; }
+
+  .app-card {
+    grid-template-columns: 64px 1fr;
+    gap: 18px;
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .app-icon {
+    width: 64px;
+    border-radius: 16px;
+    font-size: 1.4rem;
+  }
+
+  .app-copy h3 { font-size: 1.55rem; }
+
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
