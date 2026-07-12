@@ -1,0 +1,10 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+<rect width="1024" height="1024" fill="#121214"/>
+<path d="M 312 292 L 312 692 L 712 692" stroke="#F5F5F7" stroke-width="16" stroke-linecap="round" stroke-linejoin="miter" fill="none"/>
+<line x1="312" y1="692" x2="638.02" y2="610.71" stroke="#F5F5F7" stroke-width="16" stroke-linecap="round"/>
+<line x1="312" y1="692" x2="613.99" y2="544.71" stroke="#F5F5F7" stroke-width="16" stroke-linecap="round"/>
+<line x1="312" y1="692" x2="576.77" y2="485.14" stroke="#F5F5F7" stroke-width="16" stroke-linecap="round"/>
+<line x1="312" y1="692" x2="527.98" y2="434.61" stroke="#F5F5F7" stroke-width="16" stroke-linecap="round"/>
+<line x1="312" y1="692" x2="469.74" y2="395.33" stroke="#F5F5F7" stroke-width="16" stroke-linecap="round"/>
+<line x1="312" y1="692" x2="404.61" y2="369.02" stroke="#F5F5F7" stroke-width="16" stroke-linecap="round"/>
+</svg>

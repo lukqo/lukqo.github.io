@@ -1,11 +1,14 @@
 # lukqo.github.io
 
-Official website for Lukqo apps and projects.
+Official Lukqo developer website.
 
-## Files
+## Structure
 
-- `index.html` — developer homepage
-- `privacy.html` — privacy policy
-- `support.html` — support page
-- `styles.css` — shared site styles
-- `app-ads.txt` — Google AdMob authorized seller declaration
+- `/` — developer homepage
+- `/apps/dio/` — Dio app page
+- `/apps/dio/privacy.html` — Dio privacy policy
+- `/apps/dio/support.html` — Dio support
+- `/apps/yomuhon/` — Yomuhon app page
+- `/apps/yomuhon/privacy.html` — reserved pre-release privacy page
+- `/apps/yomuhon/support.html` — Yomuhon support
+- `/app-ads.txt` — AdMob authorized seller declaration
